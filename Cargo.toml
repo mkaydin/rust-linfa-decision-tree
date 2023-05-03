@@ -1,0 +1,18 @@
+[package]
+name = "rust-linfa-decision-tree"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+linfa = "*"
+ndarray = "*"
+ndarray-csv = "*"
+csv = "*"
+flate2 = "*"
+thiserror = "*"
+linfa-preprocessing = "*"
+ndarray-rand = "*"
+rand = "*"
+linfa-trees = "*"

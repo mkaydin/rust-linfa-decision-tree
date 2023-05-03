@@ -1,0 +1,635 @@
+
+\documentclass[margin=10pt]{standalone}
+\usepackage{tikz,forest}
+\usetikzlibrary{arrows.meta}
+\forestset{
+default preamble={
+before typesetting nodes={
+  !r.replace by={[, coordinate, append]}
+},  
+where n children=0{
+  tier=word,
+}{  
+  %diamond, aspect=2,
+},  
+where level=0{}{
+  if n=1{
+    edge label={node[pos=.2, above] {Y}},
+  }{  
+    edge label={node[pos=.2, above] {N}},
+  }   
+},  
+for tree={
+  edge+={thick, -Latex},
+  s sep'+=2cm,
+  draw,
+  thick,
+  edge path'={ (!u) -| (.parent)},
+  align=center,
+}   
+}
+}\begin{document}\begin{forest}[Val($10$) $ \leq 10.35$ \\ Imp. $0.06$
+	[Val($6$) $ \leq 94.50$ \\ Imp. $0.03$
+		[Val($9$) $ \leq 0.56$ \\ Imp. $0.02$
+			[Val($10$) $ \leq 9.07$ \\ Imp. $0.01$
+				[Label: 4]
+				[Val($9$) $ \leq 0.47$ \\ Imp. $0.01$
+					[Val($6$) $ \leq 88.50$ \\ Imp. $0.03$
+						[Val($9$) $ \leq 0.35$ \\ Imp. $0.04$
+							[Label: 4]
+							[Val($6$) $ \leq 33.50$ \\ Imp. $0.01$
+								[Val($1$) $ \leq 0.69$ \\ Imp. $0.02$
+									[Val($9$) $ \leq 0.45$ \\ Imp. $0.02$
+										[Val($7$) $ \leq 0.99$ \\ Imp. $0.03$
+											[Label: 5]
+											[Val($7$) $ \leq 1.00$ \\ Imp. $0.17$
+												[Label: 6]
+												[Label: 5]]]
+										[Label: 5]]
+									[Val($6$) $ \leq 19.50$ \\ Imp. $0.04$
+										[Label: 5]
+										[Val($8$) $ \leq 3.12$ \\ Imp. $0.11$
+											[Label: 5]
+											[Label: 4]]]]
+								[Label: 5]]]
+						[Label: 6]]
+					[Val($4$) $ \leq 0.19$ \\ Imp. $0.01$
+						[Val($1$) $ \leq 1.01$ \\ Imp. $0.01$
+							[Val($1$) $ \leq 0.70$ \\ Imp. $0.01$
+								[Val($3$) $ \leq 3.95$ \\ Imp. $0.04$
+									[Val($1$) $ \leq 0.58$ \\ Imp. $0.02$
+										[Val($7$) $ \leq 1.00$ \\ Imp. $0.07$
+											[Val($10$) $ \leq 9.45$ \\ Imp. $0.11$
+												[Val($4$) $ \leq 0.08$ \\ Imp. $0.13$
+													[Val($2$) $ \leq 0.11$ \\ Imp. $0.09$
+														[Label: 6]
+														[Val($7$) $ \leq 1.00$ \\ Imp. $0.14$
+															[Label: 5]
+															[Label: 6]]]
+													[Label: 5]]
+												[Val($7$) $ \leq 1.00$ \\ Imp. $0.02$
+													[Label: 6]
+													[Val($7$) $ \leq 1.00$ \\ Imp. $0.08$
+														[Label: 5]
+														[Val($5$) $ \leq 7.50$ \\ Imp. $0.12$
+															[Label: 5]
+															[Label: 6]]]]]
+											[Label: 5]]
+										[Val($0$) $ \leq 8.45$ \\ Imp. $0.06$
+											[Val($6$) $ \leq 90.50$ \\ Imp. $0.04$
+												[Val($10$) $ \leq 9.22$ \\ Imp. $0.03$
+													[Val($1$) $ \leq 0.65$ \\ Imp. $0.16$
+														[Label: 5]
+														[Val($1$) $ \leq 0.68$ \\ Imp. $0.33$
+															[Label: 4]
+															[Label: 5]]]
+													[Label: 5]]
+												[Label: 5]]
+											[Val($6$) $ \leq 48.50$ \\ Imp. $0.22$
+												[Val($1$) $ \leq 0.67$ \\ Imp. $0.08$
+													[Val($4$) $ \leq 0.09$ \\ Imp. $0.29$
+														[Label: 6]
+														[Label: 5]]
+													[Label: 6]]
+												[Label: 5]]]]
+									[Label: 6]]
+								[Val($2$) $ \leq 0.23$ \\ Imp. $0.03$
+									[Val($1$) $ \leq 0.87$ \\ Imp. $0.01$
+										[Val($1$) $ \leq 0.77$ \\ Imp. $0.02$
+											[Val($7$) $ \leq 1.00$ \\ Imp. $0.03$
+												[Label: 5]
+												[Val($1$) $ \leq 0.73$ \\ Imp. $0.12$
+													[Label: 5]
+													[Label: 4]]]
+											[Label: 5]]
+										[Label: 5]]
+									[Val($1$) $ \leq 0.83$ \\ Imp. $0.03$
+										[Val($1$) $ \leq 0.77$ \\ Imp. $0.12$
+											[Label: 6]
+											[Label: 4]]
+										[Label: 5]]]]
+							[Val($1$) $ \leq 1.06$ \\ Imp. $0.50$
+								[Label: 6]
+								[Label: 4]]]
+						[Label: 3]]]]
+			[Val($1$) $ \leq 0.32$ \\ Imp. $0.02$
+				[Val($0$) $ \leq 11.55$ \\ Imp. $0.08$
+					[Val($3$) $ \leq 4.05$ \\ Imp. $0.05$
+						[Val($9$) $ \leq 0.97$ \\ Imp. $0.06$
+							[Val($7$) $ \leq 0.99$ \\ Imp. $0.06$
+								[Label: 7]
+								[Val($4$) $ \leq 0.08$ \\ Imp. $0.03$
+									[Label: 6]
+									[Val($1$) $ \leq 0.18$ \\ Imp. $0.07$
+										[Label: 6]
+										[Val($7$) $ \leq 1.00$ \\ Imp. $0.21$
+											[Label: 6]
+											[Label: 5]]]]]
+							[Label: 7]]
+						[Label: 5]]
+					[Val($7$) $ \leq 1.00$ \\ Imp. $0.22$
+						[Val($8$) $ \leq 2.88$ \\ Imp. $0.21$
+							[Label: 8]
+							[Label: 7]]
+						[Label: 6]]]
+				[Val($1$) $ \leq 0.63$ \\ Imp. $0.02$
+					[Val($0$) $ \leq 12.55$ \\ Imp. $0.01$
+						[Val($2$) $ \leq 0.56$ \\ Imp. $0.01$
+							[Val($9$) $ \leq 0.66$ \\ Imp. $0.01$
+								[Val($4$) $ \leq 0.08$ \\ Imp. $0.02$
+									[Val($6$) $ \leq 78.50$ \\ Imp. $0.03$
+										[Val($0$) $ \leq 12.45$ \\ Imp. $0.02$
+											[Val($6$) $ \leq 36.50$ \\ Imp. $0.02$
+												[Val($7$) $ \leq 1.00$ \\ Imp. $0.05$
+													[Label: 6]
+													[Val($0$) $ \leq 6.35$ \\ Imp. $0.03$
+														[Label: 5]
+														[Val($7$) $ \leq 1.00$ \\ Imp. $0.04$
+															[Val($7$) $ \leq 1.00$ \\ Imp. $0.03$
+																[Label: 6]
+																[Label: 5]]
+															[Label: 5]]]]
+												[Val($7$) $ \leq 1.00$ \\ Imp. $0.04$
+													[Label: 5]
+													[Val($2$) $ \leq 0.32$ \\ Imp. $0.07$
+														[Val($5$) $ \leq 15.50$ \\ Imp. $0.25$
+															[Val($6$) $ \leq 42.50$ \\ Imp. $0.03$
+																[Label: 5]
+																[Val($2$) $ \leq 0.11$ \\ Imp. $0.04$
+																	[Label: 5]
+																	[Val($4$) $ \leq 0.07$ \\ Imp. $0.11$
+																		[Label: 5]
+																		[Label: 6]]]]
+															[Val($7$) $ \leq 1.00$ \\ Imp. $0.08$
+																[Label: 6]
+																[Val($7$) $ \leq 1.00$ \\ Imp. $0.48$
+																	[Label: 5]
+																	[Label: 6]]]]
+														[Val($5$) $ \leq 29.50$ \\ Imp. $0.15$
+															[Label: 5]
+															[Label: 7]]]]]
+											[Label: 4]]
+										[Label: 6]]
+									[Val($8$) $ \leq 3.17$ \\ Imp. $0.09$
+										[Val($7$) $ \leq 1.00$ \\ Imp. $0.05$
+											[Val($1$) $ \leq 0.48$ \\ Imp. $0.44$
+												[Label: 6]
+												[Label: 5]]
+											[Label: 5]]
+										[Val($8$) $ \leq 3.52$ \\ Imp. $0.06$
+											[Val($6$) $ \leq 69.50$ \\ Imp. $0.03$
+												[Val($10$) $ \leq 10.02$ \\ Imp. $0.02$
+													[Val($4$) $ \leq 0.09$ \\ Imp. $0.05$
+														[Val($7$) $ \leq 1.00$ \\ Imp. $0.07$
+															[Val($7$) $ \leq 1.00$ \\ Imp. $0.09$
+																[Label: 6]
+																[Label: 5]]
+															[Val($8$) $ \leq 3.25$ \\ Imp. $0.32$
+																[Label: 7]
+																[Label: 6]]]
+														[Val($4$) $ \leq 0.10$ \\ Imp. $0.03$
+															[Label: 6]
+															[Val($4$) $ \leq 0.12$ \\ Imp. $0.38$
+																[Label: 5]
+																[Label: 6]]]]
+													[Label: 6]]
+												[Val($6$) $ \leq 71.50$ \\ Imp. $0.06$
+													[Label: 5]
+													[Val($6$) $ \leq 75.50$ \\ Imp. $0.00$
+														[Label: 5]
+														[Label: 6]]]]
+											[Label: 5]]]]
+								[Val($3$) $ \leq 1.73$ \\ Imp. $0.04$
+									[Val($7$) $ \leq 1.00$ \\ Imp. $0.26$
+										[Label: 5]
+										[Val($4$) $ \leq 0.15$ \\ Imp. $0.15$
+											[Val($7$) $ \leq 1.00$ \\ Imp. $0.13$
+												[Val($7$) $ \leq 1.00$ \\ Imp. $0.08$
+													[Label: 7]
+													[Label: 6]]
+												[Val($7$) $ \leq 1.00$ \\ Imp. $0.50$
+													[Label: 3]
+													[Label: 6]]]
+											[Label: 4]]]
+									[Val($4$) $ \leq 0.09$ \\ Imp. $0.05$
+										[Val($2$) $ \leq 0.07$ \\ Imp. $0.04$
+											[Val($7$) $ \leq 1.00$ \\ Imp. $0.12$
+												[Val($5$) $ \leq 8.50$ \\ Imp. $0.09$
+													[Label: 5]
+													[Label: 6]]
+												[Label: 6]]
+											[Val($1$) $ \leq 0.41$ \\ Imp. $0.03$
+												[Val($4$) $ \leq 0.07$ \\ Imp. $0.06$
+													[Val($9$) $ \leq 0.76$ \\ Imp. $0.19$
+														[Val($2$) $ \leq 0.29$ \\ Imp. $0.38$
+															[Label: 7]
+															[Label: 4]]
+														[Label: 6]]
+													[Val($0$) $ \leq 11.35$ \\ Imp. $0.10$
+														[Label: 6]
+														[Label: 5]]]
+												[Label: 6]]]
+										[Val($1$) $ \leq 0.41$ \\ Imp. $0.17$
+											[Val($6$) $ \leq 56.50$ \\ Imp. $0.19$
+												[Label: 6]
+												[Label: 5]]
+											[Val($7$) $ \leq 1.00$ \\ Imp. $0.03$
+												[Val($4$) $ \leq 0.18$ \\ Imp. $0.50$
+													[Label: 6]
+													[Label: 5]]
+												[Val($4$) $ \leq 0.21$ \\ Imp. $0.04$
+													[Label: 5]
+													[Val($4$) $ \leq 0.34$ \\ Imp. $0.50$
+														[Label: 6]
+														[Label: 5]]]]]]]]
+							[Val($2$) $ \leq 0.61$ \\ Imp. $0.08$
+								[Label: 5]
+								[Val($8$) $ \leq 3.06$ \\ Imp. $0.16$
+									[Label: 5]
+									[Val($0$) $ \leq 9.55$ \\ Imp. $0.17$
+										[Val($7$) $ \leq 1.00$ \\ Imp. $0.44$
+											[Label: 6]
+											[Label: 5]]
+										[Label: 6]]]]]
+						[Label: 6]]
+					[Val($7$) $ \leq 1.00$ \\ Imp. $0.03$
+						[Val($5$) $ \leq 36.50$ \\ Imp. $0.03$
+							[Val($5$) $ \leq 10.50$ \\ Imp. $0.04$
+								[Val($3$) $ \leq 1.85$ \\ Imp. $0.04$
+									[Val($9$) $ \leq 0.78$ \\ Imp. $0.12$
+										[Val($7$) $ \leq 1.00$ \\ Imp. $0.06$
+											[Val($7$) $ \leq 1.00$ \\ Imp. $0.50$
+												[Label: 5]
+												[Label: 3]]
+											[Label: 5]]
+										[Label: 4]]
+									[Val($1$) $ \leq 0.81$ \\ Imp. $0.05$
+										[Val($5$) $ \leq 5.75$ \\ Imp. $0.05$
+											[Label: 6]
+											[Val($4$) $ \leq 0.07$ \\ Imp. $0.07$
+												[Label: 6]
+												[Label: 5]]]
+										[Val($1$) $ \leq 0.90$ \\ Imp. $0.04$
+											[Label: 5]
+											[Val($1$) $ \leq 0.92$ \\ Imp. $0.11$
+												[Label: 7]
+												[Label: 5]]]]]
+								[Val($7$) $ \leq 1.00$ \\ Imp. $0.01$
+									[Val($1$) $ \leq 0.82$ \\ Imp. $0.21$
+										[Label: 5]
+										[Label: 4]]
+									[Val($4$) $ \leq 0.08$ \\ Imp. $0.01$
+										[Val($10$) $ \leq 9.93$ \\ Imp. $0.11$
+											[Val($8$) $ \leq 3.50$ \\ Imp. $0.02$
+												[Val($4$) $ \leq 0.07$ \\ Imp. $0.05$
+													[Label: 5]
+													[Val($0$) $ \leq 7.45$ \\ Imp. $0.11$
+														[Val($6$) $ \leq 39.50$ \\ Imp. $0.50$
+															[Label: 6]
+															[Label: 5]]
+														[Label: 5]]]
+												[Label: 5]]
+											[Label: 6]]
+										[Label: 5]]]]
+							[Label: 6]]
+						[Val($3$) $ \leq 4.15$ \\ Imp. $0.11$
+							[Val($8$) $ \leq 3.15$ \\ Imp. $0.07$
+								[Val($6$) $ \leq 84.50$ \\ Imp. $0.38$
+									[Label: 5]
+									[Label: 6]]
+								[Val($10$) $ \leq 9.28$ \\ Imp. $0.04$
+									[Label: 6]
+									[Val($7$) $ \leq 1.00$ \\ Imp. $0.07$
+										[Label: 6]
+										[Val($7$) $ \leq 1.00$ \\ Imp. $0.09$
+											[Label: 5]
+											[Label: 6]]]]]
+							[Label: 5]]]]]]
+		[Val($8$) $ \leq 2.94$ \\ Imp. $0.04$
+			[Val($9$) $ \leq 1.96$ \\ Imp. $0.38$
+				[Label: 6]
+				[Label: 5]]
+			[Val($6$) $ \leq 120.50$ \\ Imp. $0.00$
+				[Val($8$) $ \leq 3.08$ \\ Imp. $0.01$
+					[Val($6$) $ \leq 107.00$ \\ Imp. $0.50$
+						[Label: 5]
+						[Label: 6]]
+					[Val($6$) $ \leq 117.50$ \\ Imp. $0.01$
+						[Val($10$) $ \leq 9.58$ \\ Imp. $0.01$
+							[Val($7$) $ \leq 1.00$ \\ Imp. $0.01$
+								[Val($7$) $ \leq 1.00$ \\ Imp. $0.06$
+									[Val($3$) $ \leq 3.05$ \\ Imp. $0.03$
+										[Label: 5]
+										[Val($3$) $ \leq 5.45$ \\ Imp. $0.04$
+											[Val($6$) $ \leq 108.50$ \\ Imp. $0.18$
+												[Label: 5]
+												[Label: 6]]
+											[Label: 5]]]
+									[Label: 6]]
+								[Label: 5]]
+							[Label: 5]]
+						[Label: 5]]]
+				[Label: 5]]]]
+	[Val($1$) $ \leq 0.34$ \\ Imp. $0.02$
+		[Val($9$) $ \leq 0.71$ \\ Imp. $0.03$
+			[Val($6$) $ \leq 10.50$ \\ Imp. $0.07$
+				[Val($4$) $ \leq 0.06$ \\ Imp. $0.09$
+					[Label: 7]
+					[Val($6$) $ \leq 9.50$ \\ Imp. $0.20$
+						[Val($7$) $ \leq 1.00$ \\ Imp. $0.22$
+							[Label: 7]
+							[Label: 6]]
+						[Label: 7]]]
+				[Val($4$) $ \leq 0.10$ \\ Imp. $0.04$
+					[Val($1$) $ \leq 0.23$ \\ Imp. $0.04$
+						[Val($10$) $ \leq 11.15$ \\ Imp. $0.28$
+							[Label: 5]
+							[Label: 6]]
+						[Val($5$) $ \leq 23.50$ \\ Imp. $0.06$
+							[Val($6$) $ \leq 27.50$ \\ Imp. $0.05$
+								[Val($3$) $ \leq 2.02$ \\ Imp. $0.16$
+									[Val($1$) $ \leq 0.31$ \\ Imp. $0.09$
+										[Val($1$) $ \leq 0.28$ \\ Imp. $0.12$
+											[Val($10$) $ \leq 11.25$ \\ Imp. $0.50$
+												[Label: 6]
+												[Label: 7]]
+											[Label: 6]]
+										[Label: 5]]
+									[Val($10$) $ \leq 11.85$ \\ Imp. $0.16$
+										[Val($7$) $ \leq 0.99$ \\ Imp. $0.33$
+											[Label: 7]
+											[Label: 6]]
+										[Label: 7]]]
+								[Val($6$) $ \leq 92.50$ \\ Imp. $0.12$
+									[Val($8$) $ \leq 3.40$ \\ Imp. $0.06$
+										[Label: 6]
+										[Val($7$) $ \leq 0.99$ \\ Imp. $0.50$
+											[Label: 6]
+											[Label: 5]]]
+									[Label: 4]]]
+							[Val($7$) $ \leq 0.99$ \\ Imp. $0.36$
+								[Label: 7]
+								[Val($7$) $ \leq 0.99$ \\ Imp. $0.50$
+									[Label: 8]
+									[Label: 5]]]]]
+					[Label: 5]]]
+			[Val($0$) $ \leq 10.95$ \\ Imp. $0.03$
+				[Val($6$) $ \leq 53.50$ \\ Imp. $0.03$
+					[Val($7$) $ \leq 1.00$ \\ Imp. $0.07$
+						[Label: 7]
+						[Val($3$) $ \leq 2.83$ \\ Imp. $0.05$
+							[Val($0$) $ \leq 10.85$ \\ Imp. $0.05$
+								[Val($6$) $ \leq 17.50$ \\ Imp. $0.03$
+									[Val($0$) $ \leq 9.45$ \\ Imp. $0.38$
+										[Val($10$) $ \leq 11.75$ \\ Imp. $0.50$
+											[Label: 8]
+											[Label: 7]]
+										[Label: 6]]
+									[Val($10$) $ \leq 10.85$ \\ Imp. $0.05$
+										[Val($7$) $ \leq 1.00$ \\ Imp. $0.28$
+											[Label: 6]
+											[Label: 7]]
+										[Val($1$) $ \leq 0.14$ \\ Imp. $0.02$
+											[Label: 7]
+											[Val($7$) $ \leq 1.00$ \\ Imp. $0.04$
+												[Label: 6]
+												[Label: 7]]]]]
+								[Label: 6]]
+							[Val($3$) $ \leq 5.12$ \\ Imp. $0.38$
+								[Label: 6]
+								[Label: 8]]]]
+					[Val($6$) $ \leq 77.25$ \\ Imp. $0.18$
+						[Val($7$) $ \leq 0.99$ \\ Imp. $0.16$
+							[Label: 6]
+							[Val($1$) $ \leq 0.23$ \\ Imp. $0.11$
+								[Label: 7]
+								[Label: 5]]]
+						[Label: 7]]]
+				[Label: 7]]]
+		[Val($10$) $ \leq 11.45$ \\ Imp. $0.02$
+			[Val($9$) $ \leq 0.58$ \\ Imp. $0.02$
+				[Val($10$) $ \leq 10.78$ \\ Imp. $0.04$
+					[Val($2$) $ \leq 0.08$ \\ Imp. $0.06$
+						[Val($1$) $ \leq 0.91$ \\ Imp. $0.09$
+							[Val($6$) $ \leq 8.50$ \\ Imp. $0.08$
+								[Label: 4]
+								[Label: 6]]
+							[Val($0$) $ \leq 5.05$ \\ Imp. $0.50$
+								[Label: 4]
+								[Label: 3]]]
+						[Val($2$) $ \leq 0.17$ \\ Imp. $0.05$
+							[Label: 5]
+							[Val($2$) $ \leq 0.41$ \\ Imp. $0.08$
+								[Label: 6]
+								[Val($7$) $ \leq 1.00$ \\ Imp. $0.12$
+									[Label: 6]
+									[Label: 5]]]]]
+					[Val($4$) $ \leq 0.09$ \\ Imp. $0.04$
+						[Val($7$) $ \leq 1.00$ \\ Imp. $0.05$
+							[Val($1$) $ \leq 0.99$ \\ Imp. $0.09$
+								[Val($7$) $ \leq 0.99$ \\ Imp. $0.05$
+									[Label: 5]
+									[Val($7$) $ \leq 0.99$ \\ Imp. $0.08$
+										[Label: 6]
+										[Val($3$) $ \leq 4.90$ \\ Imp. $0.09$
+											[Label: 5]
+											[Label: 4]]]]
+								[Label: 4]]
+							[Label: 5]]
+						[Val($4$) $ \leq 0.12$ \\ Imp. $0.11$
+							[Val($6$) $ \leq 38.50$ \\ Imp. $0.08$
+								[Label: 6]
+								[Label: 5]]
+							[Label: 5]]]]
+				[Val($6$) $ \leq 79.50$ \\ Imp. $0.04$
+					[Val($8$) $ \leq 3.60$ \\ Imp. $0.02$
+						[Val($8$) $ \leq 2.96$ \\ Imp. $0.02$
+							[Val($7$) $ \leq 1.00$ \\ Imp. $0.18$
+								[Label: 5]
+								[Label: 7]]
+							[Val($3$) $ \leq 5.18$ \\ Imp. $0.02$
+								[Val($1$) $ \leq 0.39$ \\ Imp. $0.02$
+									[Val($7$) $ \leq 1.00$ \\ Imp. $0.15$
+										[Label: 7]
+										[Val($7$) $ \leq 1.00$ \\ Imp. $0.12$
+											[Label: 6]
+											[Val($7$) $ \leq 1.00$ \\ Imp. $0.18$
+												[Label: 7]
+												[Label: 6]]]]
+									[Val($1$) $ \leq 0.86$ \\ Imp. $0.01$
+										[Val($6$) $ \leq 61.50$ \\ Imp. $0.01$
+											[Val($10$) $ \leq 10.65$ \\ Imp. $0.02$
+												[Val($9$) $ \leq 0.60$ \\ Imp. $0.05$
+													[Label: 6]
+													[Val($9$) $ \leq 0.69$ \\ Imp. $0.11$
+														[Val($1$) $ \leq 0.75$ \\ Imp. $0.06$
+															[Val($7$) $ \leq 0.99$ \\ Imp. $0.07$
+																[Label: 6]
+																[Label: 5]]
+															[Label: 6]]
+														[Val($7$) $ \leq 1.00$ \\ Imp. $0.15$
+															[Val($7$) $ \leq 0.99$ \\ Imp. $0.19$
+																[Label: 5]
+																[Label: 6]]
+															[Label: 7]]]]
+												[Val($4$) $ \leq 0.10$ \\ Imp. $0.02$
+													[Val($0$) $ \leq 7.15$ \\ Imp. $0.02$
+														[Label: 6]
+														[Val($8$) $ \leq 3.12$ \\ Imp. $0.02$
+															[Label: 6]
+															[Val($2$) $ \leq 0.59$ \\ Imp. $0.01$
+																[Val($2$) $ \leq 0.35$ \\ Imp. $0.02$
+																	[Val($7$) $ \leq 1.00$ \\ Imp. $0.02$
+																		[Label: 6]
+																		[Val($7$) $ \leq 1.00$ \\ Imp. $0.03$
+																			[Val($1$) $ \leq 0.64$ \\ Imp. $0.02$
+																				[Val($5$) $ \leq 25.50$ \\ Imp. $0.03$
+																					[Label: 6]
+																					[Val($1$) $ \leq 0.55$ \\ Imp. $0.12$
+																						[Label: 6]
+																						[Label: 5]]]
+																				[Label: 6]]
+																			[Val($7$) $ \leq 1.00$ \\ Imp. $0.17$
+																				[Label: 5]
+																				[Label: 6]]]]
+																	[Val($4$) $ \leq 0.08$ \\ Imp. $0.02$
+																		[Val($5$) $ \leq 14.50$ \\ Imp. $0.03$
+																			[Val($7$) $ \leq 1.00$ \\ Imp. $0.12$
+																				[Label: 7]
+																				[Label: 6]]
+																			[Label: 6]]
+																		[Label: 6]]]
+																[Val($0$) $ \leq 11.75$ \\ Imp. $0.33$
+																	[Label: 5]
+																	[Label: 7]]]]]
+													[Val($4$) $ \leq 0.12$ \\ Imp. $0.19$
+														[Label: 5]
+														[Label: 6]]]]
+											[Label: 6]]
+										[Label: 4]]]
+								[Val($3$) $ \leq 6.05$ \\ Imp. $0.32$
+									[Label: 7]
+									[Label: 6]]]]
+						[Label: 5]]
+					[Val($8$) $ \leq 3.42$ \\ Imp. $0.10$
+						[Val($7$) $ \leq 1.00$ \\ Imp. $0.07$
+							[Val($10$) $ \leq 11.08$ \\ Imp. $0.11$
+								[Val($0$) $ \leq 6.75$ \\ Imp. $0.07$
+									[Label: 5]
+									[Val($1$) $ \leq 0.37$ \\ Imp. $0.21$
+										[Label: 5]
+										[Label: 6]]]
+								[Label: 6]]
+							[Label: 5]]
+						[Label: 4]]]]
+			[Val($9$) $ \leq 0.62$ \\ Imp. $0.05$
+				[Val($1$) $ \leq 0.58$ \\ Imp. $0.04$
+					[Val($0$) $ \leq 4.65$ \\ Imp. $0.04$
+						[Label: 4]
+						[Val($6$) $ \leq 13.50$ \\ Imp. $0.03$
+							[Val($8$) $ \leq 3.59$ \\ Imp. $0.14$
+								[Val($7$) $ \leq 0.99$ \\ Imp. $0.11$
+									[Label: 7]
+									[Label: 6]]
+								[Label: 4]]
+							[Val($6$) $ \leq 74.50$ \\ Imp. $0.02$
+								[Val($2$) $ \leq 0.43$ \\ Imp. $0.01$
+									[Val($1$) $ \leq 0.52$ \\ Imp. $0.02$
+										[Label: 6]
+										[Val($7$) $ \leq 0.99$ \\ Imp. $0.12$
+											[Val($7$) $ \leq 0.99$ \\ Imp. $0.50$
+												[Label: 6]
+												[Label: 7]]
+											[Label: 6]]]
+									[Label: 6]]
+								[Val($4$) $ \leq 0.05$ \\ Imp. $0.50$
+									[Label: 6]
+									[Label: 7]]]]]
+					[Val($2$) $ \leq 0.04$ \\ Imp. $0.08$
+						[Val($7$) $ \leq 0.99$ \\ Imp. $0.09$
+							[Val($3$) $ \leq 2.17$ \\ Imp. $0.06$
+								[Label: 6]
+								[Val($7$) $ \leq 0.99$ \\ Imp. $0.11$
+									[Label: 6]
+									[Val($7$) $ \leq 0.99$ \\ Imp. $0.17$
+										[Label: 5]
+										[Val($4$) $ \leq 0.07$ \\ Imp. $0.11$
+											[Val($7$) $ \leq 0.99$ \\ Imp. $0.50$
+												[Label: 6]
+												[Label: 5]]
+											[Label: 6]]]]]
+							[Val($5$) $ \leq 27.50$ \\ Imp. $0.19$
+								[Val($3$) $ \leq 3.25$ \\ Imp. $0.25$
+									[Val($7$) $ \leq 0.99$ \\ Imp. $0.38$
+										[Label: 7]
+										[Label: 6]]
+									[Label: 4]]
+								[Label: 7]]]
+						[Val($7$) $ \leq 0.99$ \\ Imp. $0.09$
+							[Val($0$) $ \leq 4.85$ \\ Imp. $0.28$
+								[Label: 6]
+								[Label: 5]]
+							[Val($3$) $ \leq 3.48$ \\ Imp. $0.08$
+								[Label: 5]
+								[Label: 6]]]]]
+				[Val($0$) $ \leq 5.45$ \\ Imp. $0.03$
+					[Val($7$) $ \leq 0.99$ \\ Imp. $0.20$
+						[Label: 6]
+						[Label: 7]]
+					[Val($7$) $ \leq 0.99$ \\ Imp. $0.04$
+						[Label: 8]
+						[Val($3$) $ \leq 4.45$ \\ Imp. $0.04$
+							[Val($6$) $ \leq 14.50$ \\ Imp. $0.03$
+								[Val($9$) $ \leq 0.72$ \\ Imp. $0.26$
+									[Label: 7]
+									[Val($8$) $ \leq 3.05$ \\ Imp. $0.38$
+										[Label: 7]
+										[Label: 6]]]
+								[Val($7$) $ \leq 1.00$ \\ Imp. $0.03$
+									[Val($7$) $ \leq 0.99$ \\ Imp. $0.06$
+										[Val($0$) $ \leq 5.95$ \\ Imp. $0.19$
+											[Val($1$) $ \leq 0.40$ \\ Imp. $0.50$
+												[Label: 6]
+												[Label: 5]]
+											[Label: 7]]
+										[Val($0$) $ \leq 9.15$ \\ Imp. $0.08$
+											[Val($7$) $ \leq 1.00$ \\ Imp. $0.04$
+												[Val($7$) $ \leq 0.99$ \\ Imp. $0.04$
+													[Val($6$) $ \leq 16.50$ \\ Imp. $0.18$
+														[Label: 8]
+														[Val($2$) $ \leq 0.28$ \\ Imp. $0.05$
+															[Val($7$) $ \leq 0.99$ \\ Imp. $0.44$
+																[Label: 6]
+																[Label: 8]]
+															[Label: 6]]]
+													[Val($1$) $ \leq 0.39$ \\ Imp. $0.05$
+														[Val($7$) $ \leq 0.99$ \\ Imp. $0.44$
+															[Label: 7]
+															[Label: 6]]
+														[Label: 6]]]
+												[Label: 5]]
+											[Label: 7]]]
+									[Val($0$) $ \leq 10.55$ \\ Imp. $0.04$
+										[Val($1$) $ \leq 0.36$ \\ Imp. $0.04$
+											[Val($1$) $ \leq 0.35$ \\ Imp. $0.38$
+												[Label: 7]
+												[Label: 6]]
+											[Val($0$) $ \leq 10.35$ \\ Imp. $0.05$
+												[Val($6$) $ \leq 51.50$ \\ Imp. $0.05$
+													[Label: 6]
+													[Val($7$) $ \leq 1.00$ \\ Imp. $0.32$
+														[Label: 7]
+														[Label: 6]]]
+												[Label: 7]]]
+										[Label: 6]]]]
+							[Val($0$) $ \leq 13.60$ \\ Imp. $0.14$
+								[Val($2$) $ \leq 0.73$ \\ Imp. $0.21$
+									[Label: 7]
+									[Label: 5]]
+								[Label: 5]]]]]]]]]
+\node [anchor=north west] at (current bounding box.north east) {%
+                \begin{tabular}{c c c}
+                  \multicolumn{3}{@{}l@{}}{Legend:}\\
+                  Imp.&:&Impurity decrease\\Var(10)&:&feature-10\\Var(1)&:&feature-1\\Var(9)&:&feature-9\\Var(0)&:&feature-0\\Var(7)&:&feature-7\\Var(3)&:&feature-3\\Var(2)&:&feature-2\\Var(6)&:&feature-6\\Var(8)&:&feature-8\\Var(5)&:&feature-5\\Var(4)&:&feature-4\\\end{tabular}};
+	\end{forest}
+\end{document}
